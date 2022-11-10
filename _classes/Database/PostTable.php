@@ -13,7 +13,7 @@ class PostTable
 
     public function getAll()
     {
-        $statement = $this->db->query("SELECT posts.title, posts.text, posts.created_at, users.name FROM posts LEFT JOIN users ON posts.user_id = users.id");
+        $statement = $this->db->query("SELECT posts.title, posts.text, posts.created_at, users.name FROM posts LEFT JOIN users ON posts.user_id = users.id ORDER BY posts.created_at DESC");
         return $statement->fetchAll();
     }
 

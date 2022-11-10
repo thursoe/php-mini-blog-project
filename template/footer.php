@@ -1,2 +1,2 @@
-<script src="./template/css/bootstrap.min.css"></script>
+<script src="./template/js/bootstrap.min.js"></script>
 </html>

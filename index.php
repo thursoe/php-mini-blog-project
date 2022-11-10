@@ -2,23 +2,28 @@
 
 <body style="height: 100vh;">
     <div class="container-fluid h-100">
-        <div class="row justify-content-center align-items-center h-100">     
-        <div class="col-sm-6 col-lg-4">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-sm-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <?php
                         if (isset($_GET['incorrect'])) : ?>
-                            <h3>Incorrect Username or Password</h3>
+                            <div class="alert alert-danger" role="alert">
+                                Incorrect Username or Password
+                            </div>
                         <?php endif ?>
 
                         <?php
                         if (isset($_GET['registered'])) : ?>
-                            <h3>Account created succesfully!</h3>
+                            <div class="alert alert-danger" role="alert">
+                                Account created succesfully!
+                            </div>
+                            <h3></h3>
                         <?php endif ?>
 
                         <form action="_actions/login.php" method="post">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" name="username" id="username" class="form-control">
+                            <input type="text" name="username" id="username" class="form-control mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" name="password" id="password" class="form-control" placeholder="Password">
 
