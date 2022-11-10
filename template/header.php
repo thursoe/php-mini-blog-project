@@ -17,7 +17,7 @@
             <div class="container-fluid">
                 <a href="blog.php" class="navbar-brand text-primary fw-bolder">My Blog</a>
                 <div class="d-flex">
-                    <a href="profile.php" class="btn btn-primary mx-3"><i class="bi bi-person-circle"></i></a>
+                    <a href="profile.php?id=<?= $_SESSION['user']->id ?>" class="btn btn-primary mx-3"><i class="bi bi-person-circle"></i></a>
                     <a href="_actions\logout.php" class="btn btn-outline-primary">Logout</a>
                 </div>
             </div>

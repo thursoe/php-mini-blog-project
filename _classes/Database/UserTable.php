@@ -49,4 +49,17 @@ class UserTable
 
         return $row ?? false;
     }
+
+    public function findById($id)
+    {
+        $statement = $this->db->prepare("SELECT * FROM users WHERE id=:id");
+
+        $statement->execute([
+            ':id' => $id
+        ]);
+
+        $row = $statement->fetch();
+
+        return $row ?? false;
+    }
 }

@@ -34,7 +34,7 @@ $posts = $table->getAll();
                     <div class="card shadow-sm my-3">
                         <div class="card-body">
                             <h5 class="card-title"> <?= $post->title ?> </h5>
-                            <small> by - <?= $post->name ?></small> <br />
+                            <small> by - <a href="profile.php?id=<?= $post->id ?>" class="text-decoration-none text-primary"><?= $post->name ?></a></small> <br />
                             <small> updated at - <?= $post->created_at ?> </small>
                             <p class="card-text mt-3"> <?= $post->text ?> </p>
                         </div>
