@@ -28,7 +28,7 @@
                             <input type="password" name="password" id="password" class="form-control" placeholder="Password">
 
                             <div class="row my-3 px-3 justify-content-evenly">
-                                <button type="submit" class="btn btn-primary col-5 ">Submit</button>
+                                <button type="submit" class="btn btn-primary col-5 ">Log In</button>
                                 <a class="btn btn-secondary col-5 " href="register.php">Register</a>
                             </div>
                         </form>
